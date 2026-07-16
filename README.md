@@ -1,7 +1,3 @@
-# MINI_DOIP_Engine
-Weekend sniffing project for U25 MINI Countryman EV
-
-
 # Automotive DoIP & UDS Diagnostic Engine
 
 ![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)
@@ -10,7 +6,7 @@ Weekend sniffing project for U25 MINI Countryman EV
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Overview
-This repository contains a custom-built, Python-based Diagnostic over IP (DoIP) and Unified Diagnostic Services (UDS) engine designed for modern vehicle architectures (specifically targeted at BMW/MINI G-Series infrastructures). 
+This repository contains a custom-built, Python-based Diagnostic over IP (DoIP) and Unified Diagnostic Services (UDS) engine designed for modern vehicle architectures (specifically targeted at BMW/MINI G-Series infrastructures). Developed as a weekend project where I served as the system architect, leveraging AI as a pair-programming assistant for the code-level implementation.
 
 The project was born out of a reverse-engineering initiative to decode aftermarket diagnostic tablet communications. It goes beyond simple request/response scripts by implementing a robust, multi-layered packet decoding architecture and state-aware ECU session management.
 
@@ -49,3 +45,8 @@ Diagnostic requests are dynamically loaded from `UDS_payloads.yaml`. You must de
 Simply execute the main engine script:
 ```bash
 python MINI_DOIP_engine.py
+
+⚠️ Disclaimer
+
+Educational and Research Purposes Only.
+Interfacing with vehicle networks can cause irreversible damage to ECUs, deploy airbags, or disable critical safety systems. The author is not responsible for any damage, bricked modules, or safety incidents resulting from the use of this code. Always test on bench setups before connecting to a live vehicle network.
